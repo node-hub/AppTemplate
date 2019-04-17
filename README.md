@@ -1,17 +1,16 @@
 
-## AppTemplate
-
-## Node-hub
+# AppTemplate ~ Node-hub
 
 ## 1. Ready (Setup)
 
-[Download Node/NPM](https://nodejs.org/en/download/)
+[Download Node/NPM](https://nodejs.org/en/download/) if not already installed
 
-* `git clone https://github.com/node-hub/AppTemplate`
-* `git clone https://github.com/node-hub/dumb-client`
+In a new folder, run: 
+`git clone https://github.com/node-hub/AppTemplate`
+`git clone https://github.com/node-hub/dumb-client`
 
 In two terminal tabs and in this order
-1. In the AppTemplate folder =====>
+1. In the AppTemplate folder =>
 * `npm install`
 * `node start index.js`
 
@@ -28,22 +27,22 @@ In two terminal tabs and in this order
 #### IMPORTANT
 Our client has some commands that we found were necessary for the client to have access to inside all apps.
 * `/list`       ~ Lists all the games that are currently in the app pool
-* `/launch url` ~ `url` being the address deployed app
+* `/launch url` ~ `url` being the address of the deployed or local app
 * `/lobby`      ~ Takes you back to our chat app
 * `/exit`       ~ Closes the rl interface and disconnects from the current application
-* `/dev url`    ~  `url` being the address deployed app
+* `/dev url`    ~  `url` being the address of the deployed or local app
 
 #### Otherwise
 You're all set to code up your app! Pay attention to comments we've implemented as you're modifying the template!
 
-## Go (Deployment)
+## 3. Go (Deployment)
 So you have your awesome application, good for you! Now in order for our chat-app to include your application in our application pool, you need to send a post request to our application as described below. Here are the steps:
 
-1. Get your server live on either heroku or asure
+1. Get your server live on either heroku or azure
 2. Send our chat server a post request with http
-  1. App name       ~ The name of your app
-  2. App URL        ~ URL of your live deployment
-  3. Description    ~ A short description of your app for the users to reference
+  - App name       ~ The name of your app
+  - App URL        ~ URL of your live deployment
+  - Description    ~ A short description of your app for the users to reference
   * example: `echo '{"name":"YOUR_APP_NAME","url":"YOUR_APP_URL","description":"APP_DESCRIPTION"}' | http post https://shrouded-everglades-62939.herokuapp.com`
 
 Or optionally
