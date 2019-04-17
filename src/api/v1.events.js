@@ -14,6 +14,7 @@ const events = io => {
       const message = {display:`Returned with message ${payload}`};
       socket.emit('output', message);
     });
+    socket.on('disconnect', () => console.log(`Goodbye client: ${socket.id}`));
   })
 };
 
