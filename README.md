@@ -1,11 +1,11 @@
 
 ## AppTemplate
 
-### Node-hub
+## Node-hub
 
-### Ready (Setup)
+## 1. Ready (Setup)
 
-![Download Node/NPM](https://nodejs.org/en/download/)
+[Download Node/NPM](https://nodejs.org/en/download/)
 
 * `git clone https://github.com/node-hub/AppTemplate`
 * `git clone https://github.com/node-hub/dumb-client`
@@ -22,9 +22,9 @@ In two terminal tabs and in this order
 
 #### You will be able to see when you type in the client command line, the same message returned back
 
-![Connected](./assets/demo.png)
+<img src="./assets/demo.png" width="300" height="450"/>
 
-### Set (App logic)
+## 2. Set (App logic)
 #### IMPORTANT
 Our client has some commands that we found were necessary for the client to have access to inside all apps.
 * `/list`       ~ Lists all the games that are currently in the app pool
@@ -36,7 +36,7 @@ Our client has some commands that we found were necessary for the client to have
 #### Otherwise
 You're all set to code up your app! Pay attention to comments we've implemented as you're modifying the template!
 
-### Go (Deployment)
+## Go (Deployment)
 So you have your awesome application, good for you! Now in order for our chat-app to include your application in our application pool, you need to send a post request to our application as described below. Here are the steps:
 
 1. Get your server live on either heroku or asure
