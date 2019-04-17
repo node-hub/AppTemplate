@@ -49,3 +49,28 @@ So you have your awesome application, good for you! Now in order for our chat-ap
 Or optionally
 2. Send our chat server a post request with Postman
 ![Postman](./assets/postman.png)
+
+
+Here is a list of our API request handlers in case you need to update or change your existing application information
+```
+get(id) {       // Gets a singular entry with the ID or all entries
+    return id ? this.schema.findById(id) : this.schema.find();
+  }
+
+post(obj) {     //Makes a entry of your application in our list
+    return new this.schema(obj).save();
+  }
+
+  // `patch` doesn't upsert; `put` does
+patch(id, obj) {
+    return this.schema.findByIdAndUpdate(id, obj, { new: true });
+  }
+
+put(id, obj) {  //Updates the object with that ID
+    return this.schema.findByIdAndUpdate(id, obj, { new: true, upsert: true });
+  }
+
+delete(id) {    //Deletes your application entry
+    return this.schema.findByIdAndDelete(id);
+  }
+  ```
