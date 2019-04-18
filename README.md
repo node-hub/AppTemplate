@@ -30,7 +30,6 @@ Our client has some commands that we found were necessary for the client to have
 * `/launch url` ~ `url` being the address of the deployed or local app
 * `/lobby`      ~ Takes you back to our chat app
 * `/exit`       ~ Closes the rl interface and disconnects from the current application
-* `/dev`    ~  `url` being the address of the deployed or local app
 
 #### Otherwise
 You're all set to code up your app! Pay attention to comments we've implemented as you're modifying the template!
