@@ -5,8 +5,8 @@
 
 [Download Node/NPM](https://nodejs.org/en/download/) if not already installed
 
-In a new folder, run: 
-`git clone https://github.com/node-hub/AppTemplate`
+In a new folder, run: <br>
+`git clone https://github.com/node-hub/AppTemplate`<br>
 `git clone https://github.com/node-hub/dumb-client`
 
 In two terminal tabs and in this order
@@ -44,7 +44,7 @@ So you have your awesome application, good for you! Now in order for our chat-ap
   - Description    ~ A short description of your app for the users to reference
   * example: `echo '{"name":"YOUR_APP_NAME","url":"YOUR_APP_URL","description":"APP_DESCRIPTION"}' | http post https://shrouded-everglades-62939.herokuapp.com`
 
-Or optionally
+Or optionally<br>
 2. Send our chat server a post request with Postman
 ![Postman](./assets/postman.png)
 
