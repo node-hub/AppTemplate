@@ -17,7 +17,7 @@ In two terminal tabs and in this order
 2. Make sure you have our client installed
   - If not => `npm i -g hubbub_community`
 * `bamboozle` ~ Runs the client
-* `/dev` ~ Changes socket to direct connect to your server. Your server HAS TO BE on localhost:4444
+* `/launch http://localhost:4444` ~ Changes socket to direct connect to your server (could be a different port if you changed the default)
 
 #### You will be able to see when you type in the client command line, the same message returned back
 
